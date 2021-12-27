@@ -1,59 +1,221 @@
 
+/*>>>>>>>>>>>>>>>>>>> RESET <<<<<<<<<<<<<<<<<<*/
+/*
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+
+ html, body, div, span, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code,
+ del, dfn, em, img, ins, kbd, q, samp,
+ small, strong, sub, sup, var,
+ b, i,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, figcaption, figure,
+ footer, hgroup, menu, section, summary,
+ time, mark, audio, video, main, nav, header {
+   margin:0;
+   padding:0;
+   border:0;
+   outline:0;
+   font-size:100%;
+   vertical-align:baseline;
+   background:transparent;
+ }
+ 
+ input:focus,
+ textarea:focus {
+   outline: none;
+ }
+ 
+ body {
+   line-height:1;
+ }
+
+ article,aside,details,figcaption,figure,
+ footer,header,hgroup,menu,nav,section {
+   display:block;
+ }
+
+ nav ul {
+   list-style:none;
+ }
+
+ blockquote, q {
+   quotes:none;
+ }
+
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content:'';
+   content:none;
+ }
+
+ a {
+   text-decoration: none; 
+   margin:0;
+   padding:0;
+   /*font-size:100%;*/
+   vertical-align:baseline;
+   background:transparent;
+ }
+ 
+ table {
+   border-collapse:collapse;
+   border-spacing:0;
+ }
+ /* change border colour to suit your needs */
+ hr {
+   display:block;
+   height:1px;
+   border:0;
+   border-top:1px solid #cccccc;
+   margin:1em 0;
+   padding:0;
+ }
+ input, select {
+   vertical-align:middle;
+ }
+
+/*>>>>>>>>>>>>>>>>> END RESET <<<<<<<<<<<<<<<<*/
 
 
-/>>>>>>>>>>>>>>>>>>> RESET <<<<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>>>> END RESET <<<<<<<<<<<<<<<</
+/*>>>>>>>>>>>>>>>>>> GLOBAL <<<<<<<<<<<<<<<<<<*/
 
-
-/>>>>>>>>>>>>>>>>>> GLOBAL <<<<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>>> END GLOBAL <<<<<<<<<<<<<<<</
-
-/>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<</
-.header-head {
+/* alegreya-regular - latin */
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 100;
+    src: url('fonts/alegreya-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/alegreya-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/alegreya-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/alegreya-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/alegreya-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/alegreya-v19-latin-regular.svg#Alegreya') format('svg'); /* Legacy iOS */
 }
+
+
+body {
+    width: auto;
+    background-image: url("img/header/background_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+h3 {
+
+}
+
+h4 {
+    font-size: 14px;
+    font-family: 'Alegreya', 'Arial', serif;
+    font-weight: 100;
+    line-height: 1.714;
+    letter-spacing: 4.5px;
+    color: rgb(255, 255, 255);
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+
+/*header,*/ .section-1, .section-2, .section-3,
+.section-4, .section-5, .section-6, .section-7,
+.section-8,.section-9, footer   {
+    opacity: 0;
+}
+
+/*>>>>>>>>>>>>>>>> END GLOBAL <<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<*/
+header {
+    display: flex;
+    width: auto;
+    max-width: 1600px;
+    height: 70px;
+    background-color: rgba(86, 83, 76, 0.529);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid black;
+}
+
+.header__wrapp {
+    display: flex;
+    width: 1260px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid green;
+}
+
 .logo_white {
+    margin-top: 10px;
 }
+
 .nav-menu {
+    width: 845px;
+    border: 0px solid white;
 }
+
 .nav-menu__list {
+    display: flex;
+    justify-content: space-around;
 }
+
 .nav-menu__item {
+    margin-left: 0px;
 }
+
 .nav-menu__link {
 }
+
 .ss-nav-menu {
 }
+
 .ss-nav-menu__list {
+    display: flex;
+    align-items: center;
+    border: 0px solid red;
 }
+
 .ss-nav-menu__item {
+    margin-left: 28px;
 }
-.website-present {
-}
-.website-title {
-}
-.website-title__text {
-}
-.decore-line {
-}
-.website-subtitle {
-}
-.website-subtitle__text {
-}
-.website-present__button {
-}
-/>>>>>>>>>>>>>>>> END HEADER <<<<<<<<<<<<<<<</
 
-/>>>>>>>>>>>>>>>>> SECTION-1 <<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>> END SECTION-1 <<<<<<<<<<<<<</
+.ss-nav-menu__item:nth-child(-n+2) {
+    margin-top: 2px;
+}
 
-/>>>>>>>>>>>>>>>>> SECTION-2 <<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>> END SECTION-2 <<<<<<<<<<<<<</
+.ss-nav-menu__link {
+}
 
-/>>>>>>>>>>>>>>>>> SECTION-3 <<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>> END SECTION-3 <<<<<<<<<<<<<</
+/*>>>>>>>>>>>>>>>> END HEADER <<<<<<<<<<<<<<<<*/
 
-/>>>>>>>>>>>>>>>>> SECTION-4 <<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>> END SECTION-4 <<<<<<<<<<<<<</
+/*>>>>>>>>>>>>>>>>> SECTION-1 <<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>> END SECTION-1 <<<<<<<<<<<<<<*/
 
-/>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<</
-/>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<<<<<<</
+/*>>>>>>>>>>>>>>>>> SECTION-2 <<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>> END SECTION-2 <<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>> SECTION-3 <<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>> END SECTION-3 <<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>> SECTION-4 <<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>> END SECTION-4 <<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<<<<<<<*/

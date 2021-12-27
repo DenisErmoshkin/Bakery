@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>BAKERY</title>
 </head>
 <body>
     <header>
-        <div class="header-head">
-            <img class="logo_white" src="img/header/logo_white.svg" alt="logo of bakery">
+        <div class="header__wrapp">
+            <img class="logo_white" src="img/header/logo_white.png" width="140px" height="44px">
             <nav class="nav-menu">
                 <ul class="nav-menu__list">
                     <li class="nav-menu__item">
@@ -32,35 +33,42 @@
             <nav class="ss-nav-menu">
                 <ul class="ss-nav-menu__list">
                     <li class="ss-nav-menu__item">
-                        <a href="#" class="nav-menu__link"><img src="img/header/twitter.svg" alt="icon_twitter"></a>
+                        <a href="#" class="ss-nav-menu__link"><img src="img/header/twitter.svg" alt="icon_twitter"></a>
                     </li>
                     <li class="ss-nav-menu__item">
-                        <a href="#" class="nav-menu__link"><img src="img/header/facebook.svg" alt="icon_facebook"></a>
+                        <a href="#" class="ss-nav-menu__link"><img src="img/header/facebook.svg" alt="icon_facebook"></a>
                     </li>
                     <li class="ss-nav-menu__item">
-                        <a href="#" class="nav-menu__link"><img src="img/header/instagram.svg" alt="icon_instagram"></a>
+                        <a href="#" class="ss-nav-menu__link"><img src="img/header/instagram.svg" alt="icon_instagram"></a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="website-present">
-            <div class="website-title">
-                <p class="website-title__text">Pastry with love</p>
-            </div>
-            <div class="decore-line">
-                <img src="img/header/decor_line.svg" class="decore-line">
-            </div>
-            <div class="website-subtitle">
-                <p class="website-subtitle__text">
-                    We're bringing you fresh ingredients every
-                    day in ways you can't resist
-                </p>
-            </div>
-            <a href="#" class="website-present__button"><h4>OUR MENU</h4></a>
-        </div>
     </header>
     <main>
         <section class="section-1">
+            <div class="section-1__wrapp">
+                <div class="website-title">
+                    <p class="website-title__text">Pastry with love</p>
+                </div>
+                <div class="decore-line">
+                    <img src="img/section_1/decor_line.svg" class="decore-line">
+                </div>
+                <div class="website-subtitle">
+                    <p class="website-subtitle__text">
+                        We're bringing you fresh ingredients every
+                        day in ways you can't resist
+                    </p>
+                </div>
+                <a href="#" class="website-present__button"><h4>OUR MENU</h4></a>
+            </div>
+            <div class="decor-circle">
+                <img class="decor-circle__item" src="img/section_1/circle_1.svg">
+                <img class="decor-circle__item" src="img/section_1/circle_2.svg">
+            </div>
+        </section>
+
+        <section class="section-2">
             <div class="container">
                 <div class="block-art">
                     <h3>Arts of cakes</h3>
@@ -96,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-2">
+        <section class="section-3">
             <div class="container">
                 <div class="block-pancakes">
                     <img src="img/section_2/img_1.jpg" alt="pancakes">
@@ -128,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-3">
+        <section class="section-4">
             <div class="container">
                 <div class="block-breakfast">
                     <h3 class="white">Breakfast</h3>
