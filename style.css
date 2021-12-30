@@ -172,7 +172,7 @@ h3 {
   font-weight: 700;
   line-height: 0.625;
   letter-spacing: 1.5px;
-  text-align: center;
+  
 }
 
 h4 {
@@ -190,10 +190,16 @@ h5 {
   color: rgb(86, 83, 76);
   font-weight: bold;
   line-height: 1.25;
-  text-align: center;
+  
 }
 
 h6 {
+  font-size: 18px;
+  font-family: 'Alegreya', 'Arial', serif;
+  font-weight: 100;
+  line-height: 1.714;
+  letter-spacing: 4.5px;
+  color: #aa8568;
 }
 
 .sec-description {
@@ -202,7 +208,7 @@ h6 {
   color: rgb(86, 83, 76);
   line-height: 1.714;
   letter-spacing: 1.5px;
-  text-align: center;
+  
 }
 
 .gold {
@@ -211,11 +217,16 @@ h6 {
   letter-spacing: 1.65px;
 }
 
+.gray {
+  color: rgb(86, 83, 76);
+  letter-spacing: 1.2px;
+}
+
 .normal {
   font-weight: normal;
 }
 
-/*header, .section-1, .section-2,*/ .section-3,
+/*header, .section-1, .section-2, .section-3,*/
 .section-4, .section-5, .section-6, .section-7,
 .section-8,.section-9, footer   {
     opacity: 0;
@@ -424,6 +435,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   width: 110px;
   height: 60px;
 
@@ -433,7 +445,7 @@ header {
 
 .block-chef__img {
   margin-left: 10px;
-  padding-bottom: 95px;
+  padding-bottom: 100px;
 }
 
 .block-tastes{
@@ -489,6 +501,153 @@ header {
 /*>>>>>>>>>>>>>>> END SECTION-2 <<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>> SECTION-3 <<<<<<<<<<<<<<<<*/
+
+.section-3 {
+  background-image: url(img/section_3/background_img.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 760px;
+  
+  z-index: -3;
+}
+
+.block-tasty {
+  position: relative;
+  width: 965px;
+  background-image: url(img/section_3/pancakes.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-filter: drop-shadow(5px 5px 20px rgba(5, 5, 5, 0.705));
+  filter: drop-shadow(5px 5px 20px rgba(5, 5, 5, 0.705));
+  
+  margin-top: 140px;
+  margin-left: 95px;
+}
+
+.block-tasty__content {
+  position: relative;
+  background-image: url(img/section_3/windmill.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  text-align: left;
+  height: 512px;
+  margin-left: 420px;
+  background-color: #fff;
+}
+
+.block-tasty__title {
+  margin-left: 60px;
+  padding-top: 84px;
+}
+
+.block-tasty__subtitle {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.block-tasty__description {
+  width: 400px;
+  margin-left: 60px;
+  margin-top: 55px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 445px;
+  
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.slider__button_left {
+  
+  background-image: url(img/section_3/arrow_right.png);
+  transform: rotate(-180deg);
+  backgrou;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 0px;
+}
+
+.slider__button_right {
+  
+  background-image: url(img/section_3/arrow_right.png);
+  
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 0px;
+}
+
+.slider__button_left:active {
+  background-image: url(img/section_3/arrow_left.png);
+  transform: rotate(0deg);
+}
+
+.slider__button_right:active {
+  background-image: url(img/section_3/arrow_left.png);
+  transform: rotate(180deg);
+}
+
+.block-tasty__stars {
+  position: absolute;
+  content: url(img/section_3/stars.png);
+  left: 30px;
+  top: 185px;
+}
+
+.block-ready {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url(img/section_3/fields.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  top: -45px;
+  right: -105px;
+}
+
+.block-ready__num {
+  font-family: 'Alegreya';
+  font-weight: bold;
+  font-size: 92px;
+  color: #d4be73;
+  letter-spacing: 10px;
+
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.block-ready_title {
+  margin-top: 25px;
+}
+
+.block-ready_subtitle {
+  margin-top: -7px;
+}
+
+.block-tasty__circle {
+  position: absolute;
+  background-image: url(img/section_3/menu.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  left: -24px;
+  top: 45%;
+  border-radius: 50%;
+  background-color: #fff;
+}
 /*>>>>>>>>>>>>>>> END SECTION-3 <<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>> SECTION-4 <<<<<<<<<<<<<<<<*/
