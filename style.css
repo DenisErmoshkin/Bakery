@@ -100,10 +100,6 @@
          url('fonts/alegreya-v19-latin-regular.svg#Alegreya') format('svg'); /* Legacy iOS */
 }
 
-
-
-
-
 /* playfair-display-700 - vietnamese_latin-ext_latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
@@ -143,6 +139,18 @@
        url('fonts/alegreya-v19-latin-700.svg#Alegreya') format('svg'); /* Legacy iOS */
 }
 
+
+@font-face {
+  font-family: 'Alegreya 1';
+  font-style: bold;
+  src: url('fonts/alegreya-v19-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/alegreya-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/alegreya-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/alegreya-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/alegreya-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/alegreya-v19-latin-700.svg#Alegreya') format('svg'); /* Legacy iOS */
+}
 
 body {
     width: auto;
@@ -226,8 +234,8 @@ h6 {
   font-weight: normal;
 }
 
-/*header, .section-1, .section-2, .section-3,*/
-.section-4, .section-5, .section-6, .section-7,
+/*header, .section-1, .section-2, .section-3,
+.section-4,*/ .section-5, .section-6, .section-7,
 .section-8,.section-9, footer   {
     opacity: 0;
 }
@@ -274,12 +282,6 @@ header {
   margin-left: 35px;
 }
 
-.nav-menu__link {
-}
-
-.ss-nav-menu {
-}
-
 .ss-nav-menu__list {
     display: flex;
     align-items: center;
@@ -292,9 +294,6 @@ header {
 
 .ss-nav-menu__item:nth-child(-n+2) {
     margin-top: 2px;
-}
-
-.ss-nav-menu__link {
 }
 
 /*>>>>>>>>>>>>>>>> END HEADER <<<<<<<<<<<<<<<<*/
@@ -462,10 +461,6 @@ header {
   flex-wrap: wrap;
 }
 
-.block-tastes__item {
-
-}
-
 .block-tastes__img {
   display: block;
   margin: 10px;
@@ -563,15 +558,21 @@ header {
   
 }
 
+.slider__wrapp {
+  display: flex;
+  justify-content: space-around;
+  width: 365px;
+}
+
 .slider__button_left {
   
   background-image: url(img/section_3/arrow_right.png);
   transform: rotate(-180deg);
-  backgrou;
   height: 32px;
   width: 32px;
   border-radius: 50%;
   border: 0px;
+  margin-left: 8px;
 }
 
 .slider__button_right {
@@ -582,6 +583,7 @@ header {
   width: 32px;
   border-radius: 50%;
   border: 0px;
+  margin-right: 10px;
 }
 
 .slider__button_left:active {
@@ -651,6 +653,203 @@ header {
 /*>>>>>>>>>>>>>>> END SECTION-3 <<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>> SECTION-4 <<<<<<<<<<<<<<<<*/
+.section-4 {
+  background-image: url(img/section_4/backgroum_img.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 1260px;
+}
+
+.section-4__wrapp {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  width: 1260px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-breakfast {
+  width: 400px;
+  margin-left: 160px;
+  text-align: center;
+}
+
+.block-breakfast__title {
+  font-size: 60px;
+  font-family: "Alegreya";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  margin-top: 83px;
+}
+
+.block-breakfast__subtitle {
+  font-size: 18px;
+  font-family: 'Alegreya 1', 'Arial', serif;
+  font-weight: bold;
+  font-weight: 100;
+  line-height: 1.714;
+  letter-spacing: 1.0px;
+  margin-top: -2px;
+  margin-left: -3px;
+  color: #b99a8e;;
+}
+
+.block-breakfast__item {
+  position: relative;
+}
+
+.block-breakfast__item-title {
+  font-size: 30px;
+  font-family: "Alegreya";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 57px;
+  margin-left: -4px;
+}
+
+.block-breakfast__item-description {
+  font-size: 14px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #c2beba;
+  line-height: 1.8;
+  letter-spacing: 1.7px;
+  margin-top: 7px;
+}
+
+.block-breakfast__item-prise {
+  position: relative;
+  font-size: 36px;
+  font-family: "Alegreya";
+  color: rgb(223, 198, 145);
+  line-height: 0.833;
+  text-align: center;
+  letter-spacing: 1.9px;
+  margin-top: 18px;
+  margin-left: -5px;
+}
+
+.position {
+  margin-top: 50px;
+}
+
+.position-1 {
+  margin-top: 21px;
+  margin-left: -5px;
+}
+
+.position-2 {
+  margin-top: 52px;
+}
+
+.position-3 {
+  margin-top: 22px;
+}
+
+.block-breakfast__item:nth-child(-n+1):after {
+  position: absolute;
+  content: url(img/section_4/smart.png);
+  right: 157px;
+  top: 125px;
+}
+
+.block-breakfast__item:nth-child(2):after {
+  position: absolute;
+  content: url(img/section_4/smart.png);
+  right: 157px;
+  top: 128px;
+}
+
+.block-morning {
+  position: relative;
+  background-image: url(img/section_4/border.svg), url(img/section_4/1893.png);
+  background-position: 8px 7px, 36px 55px;
+  background-repeat: no-repeat;
+  width: 438px;
+  height: 600px;
+  margin-top: 87px;
+  margin-left: 260px;
+  text-align: center;
+  background-color: #f3f1e9;
+  z-index: 3;
+}
+
+.block-morning__title {
+  margin-top: 200px;
+}
+
+.line {
+  line-height: 1.28;
+  letter-spacing: -1px;
+}
+
+.block-morning__description {
+  width: 330px;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 14px;
+  font-family: "Proxima Nova Thin";
+  font-weight: bold;
+  color: rgb(86, 83, 76);
+  line-height: 2.143;
+  text-align: center;
+}
+
+.block-morning__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 48px;
+  
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+}
+
+.block-morning__angle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url(img/section_4/angle.jpg);
+  background-color: hotpink;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.block-morning__background {
+  position: absolute;
+  background-image: url(img/section_4/border1.svg);
+  background-position: 5px 9px;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 550px;
+  top: 113px;
+  right: -12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.87);
+  background-color: #dfddd7;
+  z-index: 1;
+}
+
+.block-morning__background-1 {
+  position: absolute;
+  background-image: url(img/section_4/border2.svg);
+  background-position: 40px 9px;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 502px;
+  top: 138px;
+  right: -24px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.87);
+  background-color:  #cfcec8;
+  z-index: 0;
+}
 /*>>>>>>>>>>>>>>> END SECTION-4 <<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<*/
