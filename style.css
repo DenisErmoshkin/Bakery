@@ -154,6 +154,7 @@
 
 body {
     width: auto;
+    
     background-image: url("img/header/background_img.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -235,8 +236,7 @@ h6 {
 }
 
 /*header, .section-1, .section-2, .section-3,
-.section-4,*/ .section-5, .section-6, .section-7,
-.section-8,.section-9, footer   {
+.section-4, .section-5, */ footer   {
     opacity: 0;
 }
 
@@ -630,11 +630,11 @@ header {
   margin-left: 10px;
 }
 
-.block-ready_title {
+.block-ready__title {
   margin-top: 25px;
 }
 
-.block-ready_subtitle {
+.block-ready__subtitle {
   margin-top: -7px;
 }
 
@@ -654,10 +654,15 @@ header {
 
 /*>>>>>>>>>>>>>>>>> SECTION-4 <<<<<<<<<<<<<<<<*/
 .section-4 {
+  position: relative;
+  width: auto;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(img/section_4/backgroum_img.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-  height: 1260px;
+  height: 760px;
 }
 
 .section-4__wrapp {
@@ -833,7 +838,7 @@ header {
   top: 113px;
   right: -12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.87);
-  background-color: #dfddd7;
+  background-color: #c9c7c2;
   z-index: 1;
 }
 
@@ -850,7 +855,163 @@ header {
   background-color:  #cfcec8;
   z-index: 0;
 }
+
+.block-morning__background-2 {
+  position: absolute;
+  background-image: url(img/section_4/smart_1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 420px;
+  height: 220px;
+  right: 0px;
+  bottom: 73px;
+  opacity: 0.6;
+  z-index: 5;
+}
+
 /*>>>>>>>>>>>>>>> END SECTION-4 <<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>> SECTION-5 <<<<<<<<<<<<<<<<*/
+.section-5 {
+  padding: 1px;
+  height: 950px;
+  width: auto;
+  max-width: 1600px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f3f1e9;
+  text-align: center;
+  background-image: url(img/section_5/background_1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.section-5__wrap {
+  display: flex;
+  width: 1260px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-5__title {
+  margin-top: 101px;
+}
+
+.section-5__subtitle {
+  margin-top: 16px;
+}
+
+.block-food {
+  margin-top: -10px;
+}
+
+.block-food__item-header {
+  font-size: 30px;
+  font-family: "Alegreya";
+  color: rgb(164, 125, 94);
+  font-weight: bold;
+  margin-top: 18px;
+  margin-left: 5px;
+  letter-spacing: 1.2px;
+}
+
+.block-food__item-description {
+  font-size: 14px;
+  font-family: "Proxima Nova Thin";
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  color: rgb(86, 83, 76);
+  margin-top: 20px;
+  margin-bottom: 31px;
+
+}
+
+.block-sandwich {
+  position: relative;
+  margin-top: 82px;
+  height: 556px;
+  background-color: grey;
+}
+
+.block-sandwich__aside {
+  position: absolute;
+  top: -26px;
+  right: 8px;
+  
+  
+}
+
+.block-sandwich__list {
+  padding: 1px;
+}
+.block-sandwich__item {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin-top: 1px;
+  padding-top: 40px;
+  
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.block-sandwich__item:nth-child(3) {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  padding-top: 25px;
+  margin-top: 0px;
+  background-image: url(img/section_3/fields.jpg);
+  
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.block-sandwich__title {
+  margin-top: 0px;
+}
+
+.block-sandwich__num {
+  font-family: 'Alegreya';
+  font-weight: bold;
+  font-size: 60px;
+  margin-left: 10px;
+  color: #56534c;
+  letter-spacing: 10px;
+}
+
+.block-sandwich__num-1 {
+  font-family: 'Alegreya';
+  font-weight: bold;
+  font-size: 92px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: -6px;
+  color: #d4be73;
+  letter-spacing: 10px;
+}
+
+.gold-1 {
+  color: #d4be73;
+  font-weight: 700;
+  letter-spacing: 1.0px;
+}
+
+.block-sandwich__link {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 60px;
+  bottom: -20px;
+  left: -23px;
+  border: 1px dashed #d4be73;
+  background-color: #fff;
+}
+/*>>>>>>>>>>>>>>> END SECTION-5 <<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<*/
 /*>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<<<<<<<*/
