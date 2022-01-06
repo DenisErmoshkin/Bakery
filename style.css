@@ -954,7 +954,6 @@ header {
   height: 200px;
   margin-top: 1px;
   padding-top: 40px;
-  
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1032,40 +1031,70 @@ footer {
 }
 
 .footer-nav-menu {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 80px;
+  margin-right: 0px;
 }
 
 .footer-logo {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 40px;
 }
 
 .footer-nav-menu__list {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  height: 68px;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
+  height: 69px;
+  border-top: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200,200,200);
+}
+
+.footer-nav-menu-1__list {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 69px;
+  border-top: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200,200,200);
 }
 
 .footer-nav-menu__item {
   position: relative;
   display: flex;
   align-items: center;
-  
-  
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 40px;
+  margin-left: 40px; 
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
+}
+
+.footer-nav-menu-1__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px; 
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
+}
+
+.footer-nav-menu__item:nth-child(-n+2):after {
+  position: absolute;
+  content: '~';
+  right: -45px;
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
   
 }
 
-.footer-nav-menu__item-1 {
-  margin-top: 25px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-.footer-nav-menu__link {
+.footer-nav-menu-1__item:nth-child(-n+2)::after {
+  position: absolute;
+  content: '~';
+  right: -45px;
+  text-shadow: 0px 0px 45px rgb(0, 0, 0);
+  
 }
 
 .gray-1 {
@@ -1073,27 +1102,5 @@ footer {
   letter-spacing: 1.2px;
   font-weight: bold;
   letter-spacing: 4px;
-}
-
-.footer-nav-menu__item:nth-child(-n+2):after {
-  position: absolute;
-  content: '~';
-  right: -45px;
-  
-}
-
-.footer-nav-menu__item:nth-child(-n+3) {
-  margin-right: 85px;
-}
-
-.footer-nav-menu__item:nth-last-child(-n+2)::before {
-  position: absolute;
-  content: '~';
-  left: -50px;
-  
-}
-
-.footer-nav-menu__item:nth-last-child(-n+3) {
-  margin-left: 85px;
 }
 /*>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<<<<<<<*/
