@@ -338,13 +338,13 @@ header {
 .website-present__button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 195px;
   height: 48px;
   background-color: rgba(86, 83, 76, 0.529);
   border: 1px dashed #9e9c93;
-  justify-content: center;
-  align-items: center;
-
+  
   margin-top: 63px;
   padding-left: 4px;
 }
